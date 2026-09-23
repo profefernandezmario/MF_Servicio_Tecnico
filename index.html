@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="es-AR" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MF Servicio Técnico | Service de Computadoras/Laptops en Resistencia</title>
+
+    <!-- Favicon (Un ícono de una computadora o herramienta en la pestaña) -->
+    <link rel="icon" href="imagenes/logo/MF_Textos.png" type="image/png">
+
+     <!-- 2. SEO de Negocio Local -->
+    <meta name="description" content="Reparación de computadoras, notebooks y AIO en Resistencia, Chaco. Eliminación de virus, formateo, instalación de software/hardware y mantenimiento preventivo.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Descripción de la página para los resultados de búsqueda -->
+    <meta name="description" content="Hub de herramientas informàticas y publicacion de servicios de reparacion.">
+    <meta name="keywords"
+        content="reparacion, pc, servicio tecnico, resistencia, chaco, windows, linux, chris titus, winhance, optimizacion, links a sitios oficiales, descarga de herramientas, contacto, clientes.">
+    <meta name="author" content="Mario R. Fernández">
+
+    <!-- 3. Redes Sociales y WhatsApp (Esencial para cuando te escriban por chat) -->
+    <meta property="og:title" content="MF Servicio Técnico | Reparación y Mantenimiento">
+    <meta property="og:description" content="¿Tu computadora está lenta o no enciende? Soluciones rápidas y garantizadas para PCs y notebooks. Consultanos por WhatsApp.">
+    <!-- Una foto de tu taller, un logo profesional o un diseño que diga "Servicio Técnico" -->
+    <meta property="og:image" content="https://tunegocio.com"> 
+    <meta property="og:url" content="https://tunegocio.com">
+    <meta property="og:type" content="website">
+
+    <!-- 4. Twitter Cards / X (Opcional, pero bueno tenerlo configurado) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Servicio Técnico Informático">
+    <meta name="twitter:description" content="Reparación de PCs y notebooks con garantía.">
+    <meta name="twitter:image" content="https://tunegocio.com">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-accent: #00d2ff;
+            --secondary-accent: #3a7bd5;
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism & Neon Effects */
+        .navbar-custom {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-section {
+            padding: 100px 0 60px;
+            background: radial-gradient(circle at 50% 20%, rgba(0, 210, 255, 0.1) 0%, rgba(15, 23, 42, 0) 70%);
+        }
+
+        .custom-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-accent);
+            box-shadow: 0 10px 25px -5px rgba(0, 210, 255, 0.15);
+        }
+
+        .tool-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            background: rgba(0, 210, 255, 0.1);
+            color: var(--primary-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge-category {
+            background-color: rgba(58, 125, 213, 0.2);
+            color: var(--primary-accent);
+            border: 1px solid rgba(0, 210, 255, 0.3);
+            font-size: 0.75rem;
+        }
+
+        .search-box input {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: #fff;
+        }
+
+        .search-box input:focus {
+            background-color: var(--card-bg);
+            border-color: var(--primary-accent);
+            color: #fff;
+            box-shadow: 0 0 0 0.25rem rgba(0, 210, 255, 0.25);
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, var(--secondary-accent), var(--primary-accent));
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+
+        .download-btn:hover {
+            opacity: 0.9;
+            color: #fff;
+        }
+
+        .faq-accordion .accordion-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            margin-bottom: 1rem;
+            border-radius: 10px !important;
+            overflow: hidden;
+        }
+
+        .faq-accordion .accordion-button {
+            background-color: var(--card-bg);
+            color: #fff;
+            font-weight: 600;
+            box-shadow: none;
+        }
+
+        .faq-accordion .accordion-button:not(.collapsed) {
+            color: var(--primary-accent);
+            background-color: rgba(0, 210, 255, 0.05);
+        }
+
+        .faq-accordion .accordion-button::after {
+            filter: invert(1);
+        }
+
+        /* Styling for Code Modals and Terminal UI */
+        .terminal-code {
+            background-color: #090d16;
+            color: #38bdf8;
+            font-family: 'Courier New', Courier, monospace;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 1rem;
+            max-height: 380px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            word-break: break-all;
+            font-size: 0.875rem;
+        }
+
+        .badge-py {
+            background: rgba(234, 179, 8, 0.2);
+            color: #facc15;
+            border: 1px solid rgba(234, 179, 8, 0.4);
+        }
+
+        .badge-ps {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.4);
+        }
+
+        .badge-bat {
+            background: rgba(168, 85, 247, 0.2);
+            color: #c084fc;
+            border: 1px solid rgba(168, 85, 247, 0.4);
+        }
+
+        .badge-author-own {
+            background: rgba(16, 185, 129, 0.2);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.4);
+        }
+
+        .badge-author-third {
+            background: rgba(244, 63, 94, 0.2);
+            color: #fb7185;
+            border: 1px solid rgba(244, 63, 94, 0.4);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: #fff;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            background-color: rgba(15, 23, 42, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-custom navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2" href="#">
+                <!-- <i class="fa-solid fa-microchip gradient-text"></i> -->
+                <img class="img-fluid" src="imagenes/logo/MF_Textos.png" alt="" width="60px">
+                <!-- <span>TechFix<span class="gradient-text">Pro</span></span> -->
+                <span class="gradient-text">Servicio Técnico</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link text-light" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#toolbox">Toolbox & Utilidades</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#scripts">Scripts & Tools</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#descargas">ISOs & Drivers</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="https://wa.me/5491100000000?text=Hola,%20necesito%20asistencia%20técnica" target="_blank"
+                        class="btn download-btn btn-sm px-3 py-2 rounded-pill">
+                        <i class="fa-brands fa-whatsapp me-1"></i> Urgencias PC
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center position-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <span class="badge badge-category rounded-pill px-3 py-2 mb-3 text-uppercase fw-semibold">
+                        <i class="fa-solid fa-bolt me-1"></i> Servicio Técnico Profesional de Hardware & Software
+                    </span>
+                    <h1 class="display-4 fw-extrabold mb-3">Soluciones Informáticas Integrales y Hub Técnico</h1>
+                    <p class="lead text-secondary mb-4 col-md-10 mx-auto">
+                        Reparación de PCs y Laptops, optimización de rendimiento, armado Gamer/Workstation y utilidades
+                        esenciales de diagnóstico para descargar en un solo lugar.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#contacto" class="btn download-btn btn-lg px-4 rounded-pill">
+                            <i class="fa-solid fa-screwdriver-wrench me-2"></i> Solicitar Soporte
+                        </a>
+                        <a href="#toolbox" class="btn btn-outline-light btn-lg px-4 rounded-pill">
+                            <i class="fa-solid fa-toolbox me-2"></i> Ir a la Caja de Herramientas
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="servicios" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-2">Servicios Técnicos Especializados</h2>
+                <p class="text-secondary">Mantenimiento preventivo y correctivo con diagnóstico profesional</p>
+            </div>
+            <div class="row g-4">
+                <!-- Servicio 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card p-4 h-100">
+                        <div class="icon-box"><i class="fa-solid fa-compact-disc"></i></div>
+                        <h4 class="h5 fw-bold mb-2">Instalación y Formateo</h4>
+                        <p class="text-secondary small mb-3">Instalación limpia de Windows 10/11 y Linux. Configuración
+                            de drivers oficiales, optimización del sistema y suite de oficina incluida.</p>
+                        <span class="text-primary fs-7 font-monospace"><i class="fa-solid fa-check me-1"></i> Incluye
+                            Backup previo</span>
+                    </div>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card p-4 h-100">
+                        <div class="icon-box"><i class="fa-solid fa-fan"></i></div>
+                        <h4 class="h5 fw-bold mb-2">Mantenimiento Preventivo</h4>
+                        <p class="text-secondary small mb-3">Limpieza ultrasónica, cambio de pasta térmica de alta
+                            conductividad (Thermal Grizzly/Arctic MX-4), control de temperaturas y flujo de aire.</p>
+                        <span class="text-primary fs-7 font-monospace"><i class="fa-solid fa-check me-1"></i> Extiende
+                            la vida útil</span>
+                    </div>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card p-4 h-100">
+                        <div class="icon-box"><i class="fa-solid fa-shield-virus"></i></div>
+                        <h4 class="h5 fw-bold mb-2">Desinfección de Malware</h4>
+                        <p class="text-secondary small mb-3">Eliminación profunda de Adware, Spyware, Ransomware y
+                            Malware sin perder archivos. Restauración de registros de sistema infectados.</p>
+                        <span class="text-primary fs-7 font-monospace"><i class="fa-solid fa-check me-1"></i> Limpieza
+                            garantizada</span>
+                    </div>
+                </div>
+                <!-- Servicio 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card p-4 h-100">
+                        <div class="icon-box"><i class="fa-solid fa-desktop"></i></div>
+                        <h4 class="h5 fw-bold mb-2">Armado de PC Custom</h4>
+                        <p class="text-secondary small mb-3">Asesoramiento de componentes compatibles según presupuesto
+                            (Gamer/Edición/Oficina), ensamblado profesional y gestión de cables (Cable Management).</p>
+                        <span class="text-primary fs-7 font-monospace"><i class="fa-solid fa-check me-1"></i> Tests de
+                            Stress incluidos</span>
+                    </div>
+                </div>
+                <!-- Servicio 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card p-4 h-100">
+                        <div class="icon-box"><i class="fa-solid fa-database"></i></div>
+                        <h4 class="h5 fw-bold mb-2">Recuperación de Datos</h4>
+                        <p class="text-secondary small mb-3">Recuperación de fotos, documentos y particiones borradas o
+                            corruptas en Discos Rígidos (HDD), SSDs y Memorias USB pendrive.</p>
+                        <span class="text-primary fs-7 font-monospace"><i class="fa-solid fa-check me-1"></i>
+                            Diagnóstico de unidad</span>
+                    </div>
+                </div>
+                <!-- Servicio 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card p-4 h-100">
+                        <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+                        <h4 class="h5 fw-bold mb-2">Upgrade & Repotenciación</h4>
+                        <p class="text-secondary small mb-3">Migración de HDD a SSD NVMe/SATA, clonado completo de
+                            sistema y expansión de memoria RAM para rejuvenecer notebooks y PCs viejas.</p>
+                        <span class="text-primary fs-7 font-monospace"><i class="fa-solid fa-check me-1"></i> Multiplica
+                            x10 la velocidad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: SCRIPTS Y HERRAMIENTAS PROPIAS / TERCEROS -->
+    <section id="scripts" class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center mb-4">
+                <div class="col-md-8">
+                    <span class="badge badge-category rounded-pill px-3 py-2 mb-2 text-uppercase fw-semibold">
+                        <i class="fa-solid fa-code me-1"></i> Automatización & Scripting
+                    </span>
+                    <h2 class="fw-bold mb-1">Scripts y Herramientas Técnicas</h2>
+                    <p class="text-secondary mb-0">Utilidades creadas en Batch, PowerShell y Python listas para
+                        descargar y/o ejecutar.</p>
+                </div>
+            </div>
+
+            <!-- Filtros por Entorno/Lenguaje -->
+            <div class="d-flex flex-wrap gap-2 mb-4" id="scriptCategoryButtons">
+                <button class="btn btn-sm btn-outline-info active rounded-pill px-3 filter-script-btn"
+                    data-script-cat="all">Todos</button>
+                <button class="btn btn-sm btn-outline-info rounded-pill px-3 filter-script-btn"
+                    data-script-cat="bat">CMD / Batch (.bat)</button>
+                <button class="btn btn-sm btn-outline-info rounded-pill px-3 filter-script-btn"
+                    data-script-cat="ps">PowerShell (.ps1)</button>
+                <button class="btn btn-sm btn-outline-info rounded-pill px-3 filter-script-btn"
+                    data-script-cat="py">Python (.py)</button>
+                <button class="btn btn-sm btn-outline-info rounded-pill px-3 filter-script-btn"
+                    data-script-cat="third">Terceros / Open Source</button>
+            </div>
+
+            <div class="row g-4" id="scriptsGrid">
+                <!-- Script 1: Batch Limpieza -->
+                <div class="col-md-6 col-lg-3 script-item" data-script-cat="bat">
+                    <div class="custom-card p-4 tool-card">
+                        <div>
+                            <div class="d-flex gap-1 flex-wrap mb-2">
+                                <span class="badge badge-bat">Batch (.bat)</span>
+                                <span class="badge badge-author-own"><i class="fa-solid fa-user-check me-1"></i>
+                                    Propio</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">Limpieza Mantenimiento Express</h3>
+                            <p class="text-secondary small mb-3">Limpia la caché DNS, archivos Temp de Windows y del
+                                usuario, y fuerza la purga de la papelera desde CMD.</p>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-sm btn-outline-info rounded-pill disabled"
+                                onclick="openScriptModal('script-bat-clean')">
+                                <i class="fa-solid fa-terminal me-1"></i> CMD como ADMIN
+                            </button>
+                            <button class="btn btn-sm download-btn rounded-pill"
+                                onclick="downloadScript('CleanExpress.bat', scriptCodes['script-bat-clean'])">
+                                <i class="fa-solid fa-download me-1"></i> Descargar .bat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Script 2: PowerShell Diagnóstico -->
+                <div class="col-md-6 col-lg-3 script-item" data-script-cat="ps">
+                    <div class="custom-card p-4 tool-card">
+                        <div>
+                            <div class="d-flex gap-1 flex-wrap mb-2">
+                                <span class="badge badge-ps">PowerShell (.ps1)</span>
+                                <span class="badge badge-author-own"><i class="fa-solid fa-user-check me-1"></i>
+                                    Propio</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">Diagnóstico de Hardware & Discos</h3>
+                            <p class="text-secondary small mb-3">Obtiene resumen de CPU, RAM, estado deL S.M.A.R.T.
+                                de los discos y números de serie en consola.</p>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-sm btn-outline-info rounded-pill disabled"
+                                onclick="openScriptModal('script-ps-diag')">
+                                <i class="fa-solid fa-terminal me-1"></i> POWERSHELL como ADMIN
+                            </button>
+                            <button class="btn btn-sm download-btn rounded-pill"
+                                onclick="downloadScript('SysDiag.ps1', scriptCodes['script-ps-diag'])">
+                                <i class="fa-solid fa-download me-1"></i> Descargar .ps1
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Script 3: Python Limpiador de Marcadores (Propio) -->
+                <div class="col-md-6 col-lg-3 script-item" data-script-cat="py">
+                    <div class="custom-card p-4 tool-card">
+                        <div>
+                            <div class="d-flex gap-1 flex-wrap mb-2">
+                                <span class="badge badge-py">Python (.py)</span>
+                                <span class="badge badge-author-own"><i class="fa-solid fa-user-check me-1"></i>
+                                    Propio</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">Limpiador de Marcadores</h3>
+                            <p class="text-secondary small mb-3">Analiza respaldos HTML de marcadores
+                                (Chrome/Edge/Firefox), elimina duplicados, URLs vacías o inválidas y genera una lista
+                                limpia.</p>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-sm btn-outline-info rounded-pill disabled"
+                                onclick="openScriptModal('script-py-bookmarks')">
+                                <i class="fa-solid fa-terminal me-1"></i> Ejecutar con Python
+                            </button>
+                            <button class="btn btn-sm download-btn rounded-pill"
+                                onclick="downloadScript('LimpiadorMarcadores.py', scriptCodes['script-py-bookmarks'])">
+                                <i class="fa-solid fa-download me-1"></i> Descargar .py
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Script 4: Massgrave / MAS (Terceros) -->
+                <div class="col-md-6 col-lg-3 script-item" data-script-cat="third">
+                    <div class="custom-card p-4 tool-card">
+                        <div>
+                            <div class="d-flex gap-1 flex-wrap mb-2">
+                                <span class="badge badge-ps">PowerShell</span>
+                                <span class="badge badge-author-third"><i class="fa-solid fa-users me-1"></i> Massgrave
+                                    (MAS)</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">MAS (Microsoft Activation Scripts)</h3>
+                            <p class="text-secondary small mb-3">Script de código abierto para activación limpia de
+                                Windows y Office mediante HWID / Ohook sin modificadores del
+                                sistema.<br>Comando:<kbd>irm
+                                    https://get.activated.win | iex</kbd></p>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-sm btn-outline-info rounded-pill disabled"
+                                onclick="openScriptModal('script-third-mas')">
+                                <i class="fa-solid fa-terminal me-1"></i> POWERSHELL
+                            </button>
+                            <a href="https://massgrave.dev/" target="_blank" rel="noopener"
+                                class="btn btn-sm download-btn rounded-pill">
+                                <i class="fa-solid fa-up-right-from-square me-1"></i> Sitio Oficial Massgrave
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Script 5: Winhance (Terceros) -->
+                <div class="col-md-6 col-lg-3 script-item" data-script-cat="third">
+                    <div class="custom-card p-4 tool-card">
+                        <div>
+                            <div class="d-flex gap-1 flex-wrap mb-2">
+                                <span class="badge badge-ps">Windows / C#</span>
+                                <span class="badge badge-author-third"><i class="fa-solid fa-users me-1"></i>
+                                    Winhance</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">Winhance Utility</h3>
+                            <p class="text-secondary small mb-3">Herramienta moderna para debloat, optimización de
+                                servicios y personalización avanzada de Windows 10/11.<br>Comando: <kbd>irm
+                                    "https://get.winhance.net" | iex</kbd></p>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-sm btn-outline-info rounded-pill disabled"
+                                onclick="openScriptModal('script-third-winhance')">
+                                <i class="fa-solid fa-terminal me-1"></i>Powershell
+                            </button>
+                            <a href="https://github.com/memstechtips/Winhance/releases/latest/download/Winhance.Installer.exe"
+                                target="_blank" rel="noopener" class="btn btn-sm download-btn rounded-pill">
+                                <i class="fa-solid fa-up-right-from-square me-1"></i>Descargar desde sitio oficial
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Script 6: ChrisTitusTech WinUtil -->
+                <div class="col-md-6 col-lg-3 script-item" data-script-cat="third">
+                    <div class="custom-card p-4 tool-card">
+                        <div>
+                            <div class="d-flex gap-1 flex-wrap mb-2">
+                                <span class="badge badge-ps">PowerShell</span>
+                                <span class="badge badge-author-third"><i class="fa-solid fa-users me-1"></i>
+                                    ChrisTitusTech</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">WinUtil Optimizer</h3>
+                            <p class="text-secondary small mb-3">Chris Titus Toolbox - Famosa suite open source para
+                                desinstalar bloatware, optimizar servicios y configurar Windows rápidamente.
+                                <br>Comando: <kbd>irm https://christitus.com/win |
+                                    iex</kbd></p>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-sm btn-outline-info rounded-pill disabled"
+                                onclick="openScriptModal('script-third-winutil')">
+                                <i class="fa-solid fa-terminal me-1"></i><small><b>POWERSHELL como ADMIN</b></small>
+                            </button>
+                            <a href="https://github.com/ChrisTitusTech/winutil" target="_blank" rel="noopener nofollow"
+                                class="btn btn-sm download-btn rounded-pill">
+                                <i class="fa-solid fa-up-right-from-square me-1"></i> Repositorio GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Script 7: Repositorio Winget (Propio) -->
+                <div class="col-md-6 col-lg-3 script-item" data-script-cat="ps">
+                    <div class="custom-card p-4 tool-card">
+                        <div>
+                            <div class="d-flex gap-1 flex-wrap mb-2">
+                                <span class="badge badge-ps">PowerShell (.ps1)</span>
+                                <span class="badge badge-author-own"><i class="fa-solid fa-user-check me-1"></i>
+                                    Propio</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">Repositorio Winget AutoInstaller</h3>
+                            <p class="text-secondary small mb-3">Script interactivo para la instalación desatendida por
+                                lotes de programas esenciales post-formateo (Navegadores, Runtimes, Compresores,
+                                Multimedia) vía Winget.</p>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-sm btn-outline-info rounded-pill"
+                                onclick="openScriptModal('script-ps-winget')">
+                                <i class="fa-solid fa-terminal me-1"></i> Ver / Copiar Código
+                            </button>
+                            <button class="btn btn-sm download-btn rounded-pill"
+                                onclick="downloadScript('Repositorio_winget.ps1', scriptCodes['script-ps-winget'])">
+                                <i class="fa-solid fa-download me-1"></i> Descargar .ps1
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Descargas Oficiales  -->
+    <section id="descargas" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-2">Accesos Directos a Enlaces Oficiales</h2>
+                <p class="text-secondary">Descarga ISOs limpias, librerías de sistema y busca controladores de hardware
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Sistemas Operativos -->
+                <div class="col-md-4">
+                    <div class="custom-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa-brands fa-windows fs-2 text-info me-3"></i>
+                            <h3 class="h5 fw-bold mb-0">Sistemas Operativos</h3>
+                        </div>
+                        <div class="list-group list-group-flush bg-transparent">
+                            <a href="https://www.microsoft.com/software-download/windows11" target="_blank"
+                                rel="noopener noreferrer"
+                                class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center ps-0">
+                                Windows 11 ISO <i
+                                    class="fa-solid fa-arrow-up-right-from-square text-secondary fs-7"></i>
+                            </a>
+                            <a href="https://www.microsoft.com/software-download/windows10" target="_blank"
+                                rel="noopener noreferrer"
+                                class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center ps-0">
+                                Windows 10 ISO <i
+                                    class="fa-solid fa-arrow-up-right-from-square text-secondary fs-7"></i>
+                            </a>
+                            <a href="https://ubuntu.com/download/desktop" target="_blank" rel="noopener noreferrer"
+                                class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center ps-0">
+                                Ubuntu Linux ISO <i
+                                    class="fa-solid fa-arrow-up-right-from-square text-secondary fs-7"></i>
+                            </a>
+                            <a href="https://huayra.educar.gob.ar/descargas/" target="_blank" rel="noopener noreferrer"
+                                class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center ps-0">
+                                Huayra GNU/Linux 6.5 (descargas) <i
+                                    class="fa-solid fa-arrow-up-right-from-square text-secondary fs-7"></i>
+                            </a>
+                            <a href="https://distrowatch.com/?language=ES" target="_blank" rel="noopener noreferrer"
+                                class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center ps-0">
+                                DistroWatch (descargas Linux) <i
+                                    class="fa-solid fa-arrow-up-right-from-square text-secondary fs-7"></i>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Runtimes & Componentes -->
+                <div class="col-md-4">
+                    <div class="custom-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-gear fs-2 text-warning me-3"></i>
+                            <h3 class="h5 fw-bold mb-0">Runtimes & Librerías</h3>
+                        </div>
+                        <div class="list-group list-group-flush bg-transparent">
+                            <a href="https://learn.microsoft.com/es-es/cpp/windows/latest-supported-vc-redist"
+                                target="_blank" rel="noopener noreferrer"
+                                class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center ps-0">
+                                Visual C++ All-in-One <i
+                                    class="fa-solid fa-arrow-up-right-from-square text-secondary fs-7"></i>
+                            </a>
+                            <a href="https://dotnet.microsoft.com/download/dotnet-framework" target="_blank"
+                                rel="noopener noreferrer"
+                                class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center ps-0">
+                                .NET Framework Latest <i
+                                    class="fa-solid fa-arrow-up-right-from-square text-secondary fs-7"></i>
+                            </a>
+                            <a href="https://www.java.com/download/" target="_blank" rel="noopener noreferrer"
+                                class="list-group-item bg-transparent text-light border-0 d-flex justify-content-between align-items-center ps-0">
+                                Java Runtime (JRE) <i
+                                    class="fa-solid fa-arrow-up-right-from-square text-secondary fs-7"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fabricantes Drivers -->
+                <div class="col-md-4">
+                    <div class="custom-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-hard-drive fs-2 text-success me-3"></i>
+                            <h3 class="h5 fw-bold mb-0">Drivers Oficiales</h3>
+                        </div>
+                        <div class="list-group list-group-flush bg-transparent">
+                            <a href="https://www.nvidia.com/Download/index.aspx" target="_blank"
+                                class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center ps-0">
+                                NVIDIA GeForce Drivers <i
+                                    class="fa-solid fa-arrow-up-right-from-square text-secondary fs-7"></i>
+                            </a>
+                            <a href="https://www.amd.com/en/support" target="_blank"
+                                class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center ps-0">
+                                AMD Radeon Drivers <i
+                                    class="fa-solid fa-arrow-up-right-from-square text-secondary fs-7"></i>
+                            </a>
+                            <a href="https://www.intel.es/content/www/es/es/download-center/home.html" target="_blank"
+                                class="list-group-item bg-transparent text-light border-0 d-flex justify-content-between align-items-center ps-0">
+                                Intel Driver Support <i
+                                    class="fa-solid fa-arrow-up-right-from-square text-secondary fs-7"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Preguntas Frecuentes -->
+    <section id="faq" class="py-5 bg-dark bg-opacity-50">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-2">Preguntas Frecuentes & Consejos</h2>
+                <p class="text-secondary">Dudas habituales sobre el cuidado y mantenimiento de tus equipos informáticos
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion faq-accordion" id="accordionFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    ¿Cada cuánto tiempo se debe realizar mantenimiento físico a una PC?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-secondary">
+                                    Se recomienda realizar una limpieza profunda de polvo y cambio de pasta térmica cada
+                                    6 a 12 meses, dependiendo del entorno donde se encuentre la computadora (presencia
+                                    de polvo, mascotas, humedad).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    ¿Por qué mi computadora anda muy lenta si es nueva?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-secondary">
+                                    Muchas veces las PCs nuevas vienen con software preinstalado innecesario (Bloatware)
+                                    o están utilizando un Disco Rígido tradicional (HDD) en lugar de un Disco de Estado
+                                    Sólido (SSD). Un upgrade a SSD acelera el sistema hasta 10 veces.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    ¿Se pierden mis archivos personales al formatear la PC?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-secondary">
+                                    No si se realiza un respaldo (Backup) previo. Antes de reinstalar el sistema
+                                    operativo, realizamos una copia de seguridad de todas tus carpetas personales
+                                    (Documentos, Fotos, Escritorio, Descargas).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Contacto -->
+    <section id="contacto" class="py-5">
+        <div class="container py-4">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <h2 class="fw-bold mb-3">¿Necesitas Asistencia Técnica?</h2>
+                    <p class="text-secondary mb-4">Ponte en contacto para solicitar presupuestos de reparación,
+                        asesoramiento en compras o agendar un mantenimiento.</p>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-box me-3 mb-0"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-0">Ubicación / Taller</h6>
+                            <p class="text-secondary small mb-0">Atención en laboratorio y a domicilio</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-box me-3 mb-0"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-0">Horarios de Atención</h6>
+                            <p class="text-secondary small mb-0">Lunes a Viernes: 09:00 - 21:00 hs</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-box me-3 mb-0"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-0">Correo Electrónico</h6>
+                            <p class="text-secondary small mb-0">profe.fernandezmario@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <!-- <a href="#" class="btn btn-outline-light rounded-circle p-2"><i
+                                class="fa-brands fa-facebook-f px-1"></i></a> -->
+                        <a href="https://www.instagram.com/mf.servicio.tecnico/"
+                            class="btn btn-outline-light rounded-circle p-2" target="_blank"
+                            title="MF Servicio Técnico"><i class="fa-brands fa-instagram px-1"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2"><i
+                                class="fa-brands fa-linkedin-in px-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="custom-card p-4 p-md-5">
+                        <h3 class="h4 fw-bold mb-4">Enviar Mensaje de Consulta</h3>
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small text-secondary">Nombre y Apellido</label>
+                                    <input type="text" class="form-control bg-dark text-light border-secondary" required
+                                        placeholder="Ej: Juan Pérez">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small text-secondary">Teléfono / WhatsApp</label>
+                                    <input type="tel" class="form-control bg-dark text-light border-secondary" required
+                                        placeholder="+54 362 ...">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small text-secondary">Tipo de Servicio Requerido</label>
+                                    <select class="form-select bg-dark text-light border-secondary">
+                                        <option selected>Formateo e Instalación de Sistema</option>
+                                        <option>Mantenimiento Preventivo / Limpieza</option>
+                                        <option>Armado de PC a medida</option>
+                                        <option>Lenta / Posible Virus</option>
+                                        <option>Otro diagnóstico</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small text-secondary">Detalle del Problema /
+                                        Consulta</label>
+                                    <textarea class="form-control bg-dark text-light border-secondary" rows="4" required
+                                        placeholder="Describe brevemente el fallo o lo que necesitas..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn download-btn w-100 py-3 rounded-pill">
+                                        <i class="fa-solid fa-paper-plane me-2"></i> Enviar Formulario
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/5493624096688?text=Hola,%20quisiera%20consultar%20por%20un%20servicio%20técnico"
+        class="whatsapp-float" target="_blank" aria-label="Contacto por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center text-secondary small">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 MF - Servicio Técnico.</p>
+            <p class="mb-0">Sitio web diseñado para Técnicos de PC & Usuarios de Soporte.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Repositorio de Códigos de los Scripts
+        const scriptCodes = {
+            'script-bat-clean': `@echo off
+:: =======================================================
+:: MF SERVICIO TECNICO - Mantenimiento y Limpieza Express
+:: Ejecutar como Administrador
+:: =======================================================
+title MF SERVICIO TECNICO - Limpiador Express
+color 0A
+
+echo [*] Limpiando memoria cache DNS...
+ipconfig /flushdns
+
+echo [*] Borrando archivos temporales del usuario...
+del /q /f /s "%TEMP%\\*.*" 2>nul
+for /d %%i in ("%TEMP%\\*") do rmdir /s /q "%%i" 2>nul
+
+echo [*] Borrando archivos temporales del sistema...
+del /q /f /s "%systemroot%\\Temp\\*.*" 2>nul
+for /d %%i in ("%systemroot%\\Temp\\*") do rmdir /s /q "%%i" 2>nul
+
+echo [*] Vaciando la Papelera de Reciclaje...
+powershell -Command "Clear-RecycleBin -Force -ErrorAction SilentlyContinue"
+
+echo =======================================================
+echo [OK] Limpieza completada con exito.
+echo =======================================================
+pause`,
+
+            'script-ps-winget': `# =======================================================
+# MF SERVICIO TECNICO - Repositorio Winget AutoInstaller
+# Instalacion automatizada de software esencial post-formateo
+# Ejecutar en PowerShell como Administrador
+# =======================================================
+
+Set-ExecutionPolicy Unrestricted -Scope Process -Force
+
+function Install-App ($id, $name) {
+    Write-Host "[*] Instalando $name ($id)..." -ForegroundColor Cyan
+    winget install --id $id -e --accept-package-agreements --accept-source-agreements --silent
+    if ($LASTEXITCODE -eq 0) {
+        Write-Host "[OK] $name instalado correctamente." -ForegroundColor Green
+    } else {
+        Write-Host "[!] Error o ya instalado: $name" -ForegroundColor Yellow
+    }
+}
+
+Clear-Host
+Write-Host "=======================================================" -ForegroundColor Header
+Write-Host "    MF SERVICIO TECNICO - INSTALADOR DE PAQUETES WINGET       " -ForegroundColor Green
+Write-Host "=======================================================" -ForegroundColor Header
+Write-Host "Seleccione el perfil de instalacion:"
+Write-Host "1) Instalacion Basica (Navegadores, 7-Zip, VLC, AnyDesk, PDF)"
+Write-Host "2) Instalacion Completa (Basica + Runtimes VC++, LibreOffice, GIMP)"
+Write-Host "3) Cancelar"
+
+$opcion = Read-Host "Ingrese una opcion (1-3)"
+
+switch ($opcion) {
+    "1" {
+        Install-App "Google.Chrome" "Google Chrome"
+        Install-App "Mozilla.Firefox" "Mozilla Firefox"
+        Install-App "7zip.7zip" "7-Zip"
+        Install-App "VideoLAN.VLC" "VLC Media Player"
+        Install-App "AnyDeskSoftwareGmbH.AnyDesk" "AnyDesk"
+        Install-App "Foxit.FoxitReader" "Foxit PDF Reader"
+    }
+    "2" {
+        Install-App "Google.Chrome" "Google Chrome"
+        Install-App "Mozilla.Firefox" "Mozilla Firefox"
+        Install-App "7zip.7zip" "7-Zip"
+        Install-App "RARLab.WinRAR" "WinRAR"
+        Install-App "VideoLAN.VLC" "VLC Media Player"
+        Install-App "AnyDeskSoftwareGmbH.AnyDesk" "AnyDesk"
+        Install-App "Foxit.FoxitReader" "Foxit PDF Reader"
+        Install-App "Microsoft.VCRedist.2015+.x64" "Visual C++ Redistributable 2015-2022"
+        Install-App "LibreOffice.LibreOffice" "LibreOffice"
+        Install-App "GIMP.GIMP" "GIMP Image Editor"
+    }
+    Default { Write-Host "Operacion cancelada." -ForegroundColor Red }
+}
+
+Write-Host "\n=======================================================" -ForegroundColor Green
+Write-Host "Proceso finalizado. Presione cualquier tecla para salir." -ForegroundColor Green
+$null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")`,
+
+            'script-ps-diag': `# =======================================================
+# MF SERVICIO TECNICO - Diagnostico Rapido de Sistema & Almacenamiento
+# Ejecutar en PowerShell como Administrador
+# =======================================================
+
+Write-Host "===============================================" -ForegroundColor Cyan
+Write-Host "         INFORMACION DEL SISTEMA              " -ForegroundColor Cyan
+Write-Host "===============================================" -ForegroundColor Cyan
+
+$os = Get-CimInstance Win32_OperatingSystem
+$cpu = Get-CimInstance Win32_Processor
+Write-Host "S.O.: $($os.Caption) (Build $($os.BuildNumber))" -ForegroundColor Yellow
+Write-Host "Procesador: $($cpu.Name)" -ForegroundColor Yellow
+Write-Host "RAM Total: $([math]::round($os.TotalVisibleMemorySize / 1MB, 2)) GB" -ForegroundColor Yellow
+
+Write-Host "\n===============================================" -ForegroundColor Cyan
+Write-Host "       ESTADO DE SALUD DE DISCOS (SMART)       " -ForegroundColor Cyan
+Write-Host "===============================================" -ForegroundColor Cyan
+
+Get-PhysicalDisk | Select-Object DeviceId, FriendlyName, MediaType, OperationalStatus, HealthStatus | Format-Table -AutoSize
+
+Write-Host "\nPresione cualquier tecla para salir..." -ForegroundColor Gray
+$null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")`,
+
+            'script-py-bookmarks': `# =======================================================
+# MF SERVICIO TECNICO - Limpiador y Deduplicador de Marcadores HTML
+# Parsea exportaciones de Chrome, Edge o Firefox y elimina duplicados/vacios
+# =======================================================
+import os
+import re
+from urllib.parse import urlparse
+
+def limpiar_marcadores(archivo_entrada="bookmarks.html", archivo_salida="bookmarks_limpios.html"):
+    if not os.path.exists(archivo_entrada):
+        print(f"[-] El archivo '{archivo_entrada}' no existe. Asegurate de renombrar tu exportacion.")
+        return
+
+    urls_vistas = set()
+    marcadores_filtrados = []
+    duplicados = 0
+
+    # Patron regex para extraer enlaces HREF
+    pattern_href = re.compile(r'HREF="([^"]+)"', re.IGNORECASE)
+
+    with open(archivo_entrada, "r", encoding="utf-8", errors="ignore") as f:
+        lineas = f.readlines()
+
+    for linea in lineas:
+        match = pattern_href.search(linea)
+        if match:
+            url = match.group(1).strip()
+            # Validacion básica de URL y filtrado de duplicados
+            if url in urls_vistas or not url.startswith(("http://", "https://")):
+                duplicados += 1
+                continue
+            urls_vistas.add(url)
+        
+        marcadores_filtrados.append(linea)
+
+    with open(archivo_salida, "w", encoding="utf-8") as f:
+        f.writelines(marcadores_filtrados)
+
+    print(f"[OK] Proceso terminado.")
+    print(f"[+] Marcadores unicos guardados: {len(urls_vistas)}")
+    print(f"[-] Duplicados o invalidos eliminados: {duplicados}")
+    print(f"[*] Archivo generado: {archivo_salida}")
+
+if __name__ == "__main__":
+    limpiar_marcadores()`,
+
+            'script-third-mas': `# =======================================================
+# Massgrave (MAS) - Microsoft Activation Scripts
+# Comando de ejecucion directa en PowerShell (Administrador)
+# =======================================================
+
+irm https://get.activated.win | iex`,
+
+            'script-third-winhance': `# =======================================================
+# Winhance - Windows Enhancement Utility
+# Descripcion & Comando de instalacion rapida
+# =======================================================
+# Winhance permite eliminar Bloatware, desactivar Telemetria
+# y aplicar ajustes de rendimiento con interfaz moderna tipo Windows 11.
+
+# Sitio Oficial para descarga directa del instalador / ejecutable:
+# https://winhance.net/
+
+# O ejecucion via PowerShell si esta en tu repositorio preferido:
+winget install Winhance.Winhance`,
+
+            'script-third-winutil': `# =======================================================
+# ChrisTitusTech Windows Utility
+# Comando de ejecucion directa oficial en PowerShell (Admin)
+# =======================================================
+
+iwr -useb https://christitus.com/win | iex`
+        };
+
+        let activeModalScriptKey = '';
+
+        // Abrir Modal de Código
+        function openScriptModal(key) {
+            activeModalScriptKey = key;
+            const codeText = scriptCodes[key] || '# Codigo no disponible.';
+            document.getElementById('scriptModalBody').textContent = codeText;
+
+            const modal = new bootstrap.Modal(document.getElementById('scriptCodeModal'));
+            modal.show();
+        }
+
+        // Copiar código al portapapeles
+        function copyScriptCode() {
+            const codeText = scriptCodes[activeModalScriptKey] || '';
+
+            // Metodo fallback usando textarea
+            const textarea = document.createElement('textarea');
+            textarea.value = codeText;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+
+            const copyBtn = document.getElementById('copyCodeBtn');
+            const originalHTML = copyBtn.innerHTML;
+            copyBtn.innerHTML = '<i class="fa-solid fa-check me-1"></i> ¡Copiado!';
+            copyBtn.classList.replace('download-btn', 'btn-success');
+
+            setTimeout(() => {
+                copyBtn.innerHTML = originalHTML;
+                copyBtn.classList.replace('btn-success', 'download-btn');
+            }, 2000);
+        }
+
+        // Descargar el script como archivo .bat, .ps1 o .py
+        function downloadScript(filename, textContent) {
+            const element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(textContent));
+            element.setAttribute('download', filename);
+            element.style.display = 'none';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+
+        // Lógica de Filtros para Scripts
+        document.addEventListener('DOMContentLoaded', () => {
+            const scriptFilterButtons = document.querySelectorAll('.filter-script-btn');
+            const scriptItems = document.querySelectorAll('.script-item');
+
+            scriptFilterButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    scriptFilterButtons.forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+
+                    const category = e.target.getAttribute('data-script-cat');
+
+                    scriptItems.forEach(item => {
+                        const itemCat = item.getAttribute('data-script-cat');
+                        if (category === 'all' || itemCat === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Lógica existente de Filtro e Interactividad en JavaScript
+            const searchInput = document.getElementById('searchInput');
+            const toolItems = document.querySelectorAll('.tool-item');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+
+            let currentCategory = 'all';
+
+            function filterTools() {
+                const query = searchInput.value.toLowerCase().trim();
+
+                toolItems.forEach(item => {
+                    const category = item.getAttribute('data-category');
+                    const keywords = item.getAttribute('data-keywords').toLowerCase();
+                    const title = item.querySelector('h5').textContent.toLowerCase();
+                    const description = item.querySelector('p').textContent.toLowerCase();
+
+                    const matchesCategory = (currentCategory === 'all' || category === currentCategory);
+                    const matchesSearch = title.includes(query) || description.includes(query) || keywords.includes(query);
+
+                    if (matchesCategory && matchesSearch) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+
+            if (searchInput) searchInput.addEventListener('input', filterTools);
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+
+                    currentCategory = e.target.getAttribute('data-category');
+                    filterTools();
+                });
+            });
+        });
+
+        // Manejo del envío del formulario ficticio
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector('button[type="submit"]');
+
+            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin me-2"></i> Enviando...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                btn.className = 'btn btn-success w-100 py-3 rounded-pill';
+                btn.innerHTML = '<i class="fa-solid fa-check me-2"></i> ¡Mensaje Enviado con Éxito!';
+                form.reset();
+                setTimeout(() => {
+                    btn.className = 'btn download-btn w-100 py-3 rounded-pill';
+                    btn.innerHTML = '<i class="fa-solid fa-paper-plane me-2"></i> Enviar Formulario';
+                    btn.disabled = false;
+                }, 3000);
+            }, 1200);
+        }
+    </script>
+</body>
+
+</html>
