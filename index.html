@@ -9,8 +9,9 @@
     <!-- Favicon (Un ícono de una computadora o herramienta en la pestaña) -->
     <link rel="icon" href="imagenes/logo/MF_Textos.png" type="image/png">
 
-     <!-- 2. SEO de Negocio Local -->
-    <meta name="description" content="Reparación de computadoras, notebooks y AIO en Resistencia, Chaco. Eliminación de virus, formateo, instalación de software/hardware y mantenimiento preventivo.">
+    <!-- 2. SEO de Negocio Local -->
+    <meta name="description"
+        content="Reparación de computadoras, notebooks y AIO en Resistencia, Chaco. Eliminación de virus, formateo, instalación de software/hardware y mantenimiento preventivo.">
     <meta name="robots" content="index, follow">
 
     <!-- Descripción de la página para los resultados de búsqueda -->
@@ -21,9 +22,11 @@
 
     <!-- 3. Redes Sociales y WhatsApp (Esencial para cuando te escriban por chat) -->
     <meta property="og:title" content="MF Servicio Técnico | Reparación y Mantenimiento">
-    <meta property="og:description" content="¿Tu computadora está lenta o no enciende? Soluciones rápidas y garantizadas para PCs y notebooks. Consultanos por WhatsApp.">
+    <meta property="og:description"
+        content="¿Tu computadora está lenta o no enciende? Soluciones rápidas y garantizadas para PCs y notebooks. Consultanos por WhatsApp.">
     <!-- Una foto de tu taller, un logo profesional o un diseño que diga "Servicio Técnico" -->
-    <meta property="og:image" content="https://mfserviciotecnico.netlify.app/imagenes/iconos/android-chrome-192x192.png"> 
+    <meta property="og:image"
+        content="https://mfserviciotecnico.netlify.app/imagenes/iconos/android-chrome-192x192.png">
     <meta property="og:url" content="https://mfserviciotecnico.netlify.app/">
     <meta property="og:type" content="website">
 
@@ -33,7 +36,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Servicio Técnico Informático">
     <meta name="twitter:description" content="Reparación de PCs y notebooks con garantía.">
-    <meta name="twitter:image" content="https://mfserviciotecnico.netlify.app/imagenes/iconos/android-chrome-192x192.png">
+    <meta name="twitter:image"
+        content="https://mfserviciotecnico.netlify.app/imagenes/iconos/android-chrome-192x192.png">
 
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -283,7 +287,8 @@
                     <span class="badge badge-category rounded-pill px-3 py-2 mb-3 text-uppercase fw-semibold">
                         <i class="fa-solid fa-bolt me-1"></i> Servicio Técnico Profesional de Hardware & Software
                     </span>
-                    <h1 class="display-4 fw-extrabold mb-3">Servicio Técnico Informático y Hub de Herramientas Técnicas</h1>
+                    <h1 class="display-4 fw-extrabold mb-3">Servicio Técnico Informático y Hub de Herramientas Técnicas
+                    </h1>
                     <p class="lead text-secondary mb-4 col-md-10 mx-auto">
                         Reparación de PCs y Laptops, optimización de rendimiento, armado Gamer/Workstation y utilidades
                         esenciales de diagnóstico para descargar en un solo lugar.
@@ -554,7 +559,8 @@
                             <p class="text-secondary small mb-3">Chris Titus Toolbox - Famosa suite open source para
                                 desinstalar bloatware, optimizar servicios y configurar Windows rápidamente.
                                 <br>Comando: <br> <kbd>irm https://christitus.com/win |
-                                    iex</kbd></p>
+                                    iex</kbd>
+                            </p>
                         </div>
                         <div class="d-grid gap-2">
                             <button class="btn btn-sm btn-outline-info rounded-pill disabled"
@@ -568,6 +574,36 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Script 6.1: hellzerg/optimizer -->
+                <div class="col-md-6 col-lg-3 script-item" data-script-cat="third">
+                    <div class="custom-card p-4 tool-card">
+                        <div>
+                            <div class="d-flex gap-1 flex-wrap mb-2">
+                                <span class="badge badge-ps">Windows / C#</span>
+                                <span class="badge badge-author-third"><i class="fa-solid fa-users me-1"></i>
+                                    hellzerg/optimizer </span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">hellzerg/optimizer </h3>
+                            <p class="text-secondary small mb-3">Utilidad de configuración avanzada diseñada para mejorar
+                                su privacidad y seguridad en Windows 10/11. Es muy recomendable para su uso
+                                después de una nueva instalación para lograr la máxima privacidad y
+                                beneficios de seguridad. Dependiendo de la versión de Windows, Optimizer también puede
+                                ayudarle a aplicar ajustes específicos del sistema.</p>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-sm btn-outline-info rounded-pill disabled"
+                                onclick="openScriptModal('script-third-winhance')">
+                                <i class="fa-solid fa-terminal me-1"></i>Descargar .exe
+                            </button>
+                            <a href="https://github.com/hellzerg/optimizer/releases" target="_blank" rel="noopener"
+                                class="btn btn-sm download-btn rounded-pill">
+                                <i class="fa-solid fa-up-right-from-square me-1"></i>Repositorio GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
 
                 <!-- Script 7: Repositorio Winget (Propio) -->
                 <div class="col-md-6 col-lg-3 script-item" data-script-cat="ps">
@@ -814,8 +850,8 @@
                     <div class="d-flex gap-3">
                         <!-- <a href="#" class="btn btn-outline-light rounded-circle p-2"><i
                                 class="fa-brands fa-facebook-f px-1"></i></a> -->
-                        Sígueme en mi Red Social 
-                                <a href="https://www.instagram.com/mf.servicio.tecnico/"
+                        Sígueme en mi Red Social
+                        <a href="https://www.instagram.com/mf.servicio.tecnico/"
                             class="btn btn-outline-light rounded-circle p-2" target="_blank"
                             title="MF Servicio Técnico"><i class="fa-brands fa-instagram px-1"></i></a>
                         <!-- <a href="#" class="btn btn-outline-light rounded-circle p-2"><i
